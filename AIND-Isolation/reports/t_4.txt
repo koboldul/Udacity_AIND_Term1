@@ -1,0 +1,90 @@
+
+This script evaluates the performance of the custom heuristic function by
+comparing the strength of an agent using iterative deepening (ID) search with
+alpha-beta pruning against the strength rating of agents using other heuristic
+functions.  The `ID_Improved` agent provides a baseline by measuring the
+performance of a basic agent using Iterative Deepening and the "improved"
+heuristic (from lecture) on your hardware.  The `Student` agent then measures
+the performance of Iterative Deepening and the custom heuristic against the
+same opponents.
+
+
+*************************
+ Evaluating: ID_Improved 
+*************************
+
+Playing Matches:
+----------
+  Match 1: ID_Improved vs   random    	Result: 19 to 1
+  Match 2: ID_Improved vs   greedy    	Result: 19 to 1
+  Match 3: ID_Improved vs   MM_Null   	Result: 20 to 0
+  Match 4: ID_Improved vs   MM_Open   	Result: 15 to 5
+  Match 5: ID_Improved vs MM_Improved 	Result: 17 to 3
+  Match 6: ID_Improved vs   AB_Null   	Result: 19 to 1
+  Match 7: ID_Improved vs   AB_Open   	Result: 17 to 3
+  Match 8: ID_Improved vs AB_Improved 	Result: 15 to 5
+
+
+Results:
+----------
+ID_Improved         88.12%
+
+*************************
+ Evaluating: free_in_two 
+*************************
+
+Playing Matches:
+----------
+  Match 1: free_in_two vs   random    	Result: 20 to 0
+  Match 2: free_in_two vs   greedy    	Result: 20 to 0
+  Match 3: free_in_two vs   MM_Null   	Result: 19 to 1
+  Match 4: free_in_two vs   MM_Open   	Result: 19 to 1
+  Match 5: free_in_two vs MM_Improved 	Result: 19 to 1
+  Match 6: free_in_two vs   AB_Null   	Result: 17 to 3
+  Match 7: free_in_two vs   AB_Open   	Result: 17 to 3
+  Match 8: free_in_two vs AB_Improved 	Result: 15 to 5
+
+
+Results:
+----------
+free_in_two         91.25%
+
+*************************
+    Evaluating: blind    
+*************************
+
+Playing Matches:
+----------
+  Match 1:    blind    vs   random    	Result: 20 to 0
+  Match 2:    blind    vs   greedy    	Result: 18 to 2
+  Match 3:    blind    vs   MM_Null   	Result: 20 to 0
+  Match 4:    blind    vs   MM_Open   	Result: 16 to 4
+  Match 5:    blind    vs MM_Improved 	Result: 16 to 4
+  Match 6:    blind    vs   AB_Null   	Result: 17 to 3
+  Match 7:    blind    vs   AB_Open   	Result: 13 to 7
+  Match 8:    blind    vs AB_Improved 	Result: 16 to 4
+
+
+Results:
+----------
+blind               85.00%
+
+*************************
+Evaluating: The chosen one
+*************************
+
+Playing Matches:
+----------
+  Match 1: The chosen one vs   random    	Result: 19 to 1
+  Match 2: The chosen one vs   greedy    	Result: 17 to 3
+  Match 3: The chosen one vs   MM_Null   	Result: 15 to 5
+  Match 4: The chosen one vs   MM_Open   	Result: 16 to 4
+  Match 5: The chosen one vs MM_Improved 	Result: 15 to 5
+  Match 6: The chosen one vs   AB_Null   	Result: 17 to 3
+  Match 7: The chosen one vs   AB_Open   	Result: 16 to 4
+  Match 8: The chosen one vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+The chosen one      79.38%

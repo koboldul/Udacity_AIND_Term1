@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{71a4de29-581f-480c-9866-92361d762f0e}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>run_search.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>tests</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>{7d07eb81-eaa1-43ff-b39e-0305e8a98379}</InterpreterId>
+    <InterpreterVersion>3.5</InterpreterVersion>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <CommandLineArguments>-p 1 -s 7</CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="aimacode\agents.py" />
+    <Compile Include="aimacode\canvas.py" />
+    <Compile Include="aimacode\csp.py" />
+    <Compile Include="aimacode\games.py" />
+    <Compile Include="aimacode\grid.py" />
+    <Compile Include="aimacode\ipyviews.py" />
+    <Compile Include="aimacode\learning.py" />
+    <Compile Include="aimacode\logic.py" />
+    <Compile Include="aimacode\mdp.py" />
+    <Compile Include="aimacode\nlp.py" />
+    <Compile Include="aimacode\planning.py" />
+    <Compile Include="aimacode\probability.py" />
+    <Compile Include="aimacode\rl.py" />
+    <Compile Include="aimacode\search.py" />
+    <Compile Include="aimacode\tests\test_csp.py" />
+    <Compile Include="aimacode\tests\test_games.py" />
+    <Compile Include="aimacode\tests\test_grid.py" />
+    <Compile Include="aimacode\tests\test_learning.py" />
+    <Compile Include="aimacode\tests\test_logic.py" />
+    <Compile Include="aimacode\tests\test_mdp.py" />
+    <Compile Include="aimacode\tests\test_nlp.py" />
+    <Compile Include="aimacode\tests\test_planning.py" />
+    <Compile Include="aimacode\tests\test_probability.py" />
+    <Compile Include="aimacode\tests\test_search.py" />
+    <Compile Include="aimacode\tests\test_text.py" />
+    <Compile Include="aimacode\tests\test_utils.py" />
+    <Compile Include="aimacode\tests\__init__.py" />
+    <Compile Include="aimacode\text.py" />
+    <Compile Include="aimacode\utils.py" />
+    <Compile Include="aimacode\__init__.py" />
+    <Compile Include="example_have_cake.py" />
+    <Compile Include="lp_utils.py" />
+    <Compile Include="my_air_cargo_problems.py" />
+    <Compile Include="my_planning_graph.py" />
+    <Compile Include="run_search.py" />
+    <Compile Include="tests\test_my_air_cargo_problems.py" />
+    <Compile Include="tests\test_my_planning_graph.py" />
+    <Compile Include="tests\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="aimacode\images\aima3e_big.jpg" />
+    <Content Include="aimacode\images\aima_logo.png" />
+    <Content Include="aimacode\images\bayesnet.png" />
+    <Content Include="aimacode\images\dirt.svg" />
+    <Content Include="aimacode\images\dirt05-icon.jpg" />
+    <Content Include="aimacode\images\fig_5_2.svg" />
+    <Content Include="aimacode\images\knn_plot.png" />
+    <Content Include="aimacode\images\mdp-a.png" />
+    <Content Include="aimacode\images\mdp.png" />
+    <Content Include="aimacode\images\search_animal.svg" />
+    <Content Include="aimacode\images\sprinklernet.jpg" />
+    <Content Include="aimacode\images\vacuum-icon.jpg" />
+    <Content Include="aimacode\images\vacuum.svg" />
+    <Content Include="aimacode\images\wall-icon.jpg" />
+    <Content Include="aimacode\js\canvas.js" />
+    <Content Include="aimacode\js\continuousworld.js" />
+    <Content Include="aimacode\js\gridworld.js" />
+    <Content Include="aimacode\requirements.txt" />
+    <Content Include="images\eatcake-graphplan2.png" />
+    <Content Include="images\Progression.PNG" />
+    <Content Include="images\statespace.png" />
+    <Content Include="images\twotofive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="aimacode" />
+    <Folder Include="aimacode\images" />
+    <Folder Include="aimacode\js" />
+    <Folder Include="aimacode\tests" />
+    <Folder Include="images" />
+    <Folder Include="tests" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{7d07eb81-eaa1-43ff-b39e-0305e8a98379}\3.5" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>

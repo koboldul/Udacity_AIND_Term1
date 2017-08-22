@@ -1,0 +1,75 @@
+
+This script evaluates the performance of the custom heuristic function by
+comparing the strength of an agent using iterative deepening (ID) search with
+alpha-beta pruning against the strength rating of agents using other heuristic
+functions.  The `ID_Improved` agent provides a baseline by measuring the
+performance of a basic agent using Iterative Deepening and the "improved"
+heuristic (from lecture) on your hardware.  The `Student` agent then measures
+the performance of Iterative Deepening and the custom heuristic against the
+same opponents.
+
+
+*************************
+ Evaluating: free_in_two 
+*************************
+
+Playing Matches:
+----------
+  Match 1: free_in_two vs ID_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+free_in_two         55.00%
+
+*************************
+    Evaluating: blind    
+*************************
+
+Playing Matches:
+----------
+  Match 1:    blind    vs ID_Improved 	Result: 10 to 10
+
+
+Results:
+----------
+blind               50.00%
+
+*************************
+Evaluating: central_knight
+*************************
+
+Playing Matches:
+----------
+  Match 1: central_knight vs ID_Improved 	Result: 7 to 13
+
+
+Results:
+----------
+central_knight      35.00%
+
+*************************
+Evaluating: The chosen one
+*************************
+
+Playing Matches:
+----------
+  Match 1: The chosen one vs ID_Improved 	Result: 10 to 10
+
+
+Results:
+----------
+The chosen one      50.00%
+
+*************************
+Evaluating: killer_combine
+*************************
+
+Playing Matches:
+----------
+  Match 1: killer_combine vs ID_Improved 	Result: 8 to 12
+
+
+Results:
+----------
+killer_combine      40.00%

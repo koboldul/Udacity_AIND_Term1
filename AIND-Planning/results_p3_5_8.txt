@@ -1,0 +1,40 @@
+
+Solving Air Cargo Problem 3 using uniform_cost_search...
+
+Expansions   Goal Tests   New Nodes
+  24922       24924       240735  
+
+Plan length: 12  Time elapsed in seconds: 1467.981732634147
+Load(C2, P2)
+Load(C1, P1)
+Fly(P1, SFO, LHR)
+Fly(P2, JFK, OTP)
+Load(C4, P1)
+Load(C3, P2)
+Unload(C2, P2)
+Fly(P2, OTP, SFO)
+Unload(C3, P2)
+Unload(C1, P1)
+Fly(P1, LHR, JFK)
+Unload(C4, P1)
+
+
+Solving Air Cargo Problem 3 using astar_search with h_1...
+
+Expansions   Goal Tests   New Nodes
+  24922       24924       240735  
+
+Plan length: 12  Time elapsed in seconds: 1498.96429967043
+Load(C2, P2)
+Load(C1, P1)
+Fly(P1, SFO, LHR)
+Fly(P2, JFK, OTP)
+Load(C4, P1)
+Load(C3, P2)
+Unload(C2, P2)
+Fly(P2, OTP, SFO)
+Unload(C3, P2)
+Unload(C1, P1)
+Fly(P1, LHR, JFK)
+Unload(C4, P1)
+

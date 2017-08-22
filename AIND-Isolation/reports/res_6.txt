@@ -1,0 +1,262 @@
+
+This script evaluates the performance of the custom heuristic function by
+comparing the strength of an agent using iterative deepening (ID) search with
+alpha-beta pruning against the strength rating of agents using other heuristic
+functions.  The `ID_Improved` agent provides a baseline by measuring the
+performance of a basic agent using Iterative Deepening and the "improved"
+heuristic (from lecture) on your hardware.  The `Student` agent then measures
+the performance of Iterative Deepening and the custom heuristic against the
+same opponents.
+
+
+*************************
+Evaluating: you_cant_catch_me_adaptive
+*************************
+
+Playing Matches:
+----------
+  Match 1: you_cant_catch_me_adaptive vs   random    	Result: 20 to 0
+  Match 2: you_cant_catch_me_adaptive vs   greedy    	Result: 15 to 5
+  Match 3: you_cant_catch_me_adaptive vs ID_Improved 	Result: 10 to 10
+  Match 4: you_cant_catch_me_adaptive vs   MM_Null   	Result: 20 to 0
+  Match 5: you_cant_catch_me_adaptive vs   MM_Open   	Result: 15 to 5
+  Match 6: you_cant_catch_me_adaptive vs MM_Improved 	Result: 15 to 5
+  Match 7: you_cant_catch_me_adaptive vs   AB_Null   	Result: 18 to 2
+  Match 8: you_cant_catch_me_adaptive vs   AB_Open   	Result: 12 to 8
+  Match 9: you_cant_catch_me_adaptive vs AB_Improved 	Result: 18 to 2
+
+
+Results:
+----------
+you_cant_catch_me_adaptive     79.44%
+
+*************************
+Evaluating: reversed_aggression
+*************************
+
+Playing Matches:
+----------
+  Match 1: reversed_aggression vs   random    	Result: 20 to 0
+  Match 2: reversed_aggression vs   greedy    	Result: 19 to 1
+  Match 3: reversed_aggression vs ID_Improved 	Result: 9 to 11
+  Match 4: reversed_aggression vs   MM_Null   	Result: 20 to 0
+  Match 5: reversed_aggression vs   MM_Open   	Result: 17 to 3
+  Match 6: reversed_aggression vs MM_Improved 	Result: 15 to 5
+  Match 7: reversed_aggression vs   AB_Null   	Result: 19 to 1
+  Match 8: reversed_aggression vs   AB_Open   	Result: 17 to 3
+  Match 9: reversed_aggression vs AB_Improved 	Result: 15 to 5
+
+
+Results:
+----------
+reversed_aggression     83.89%
+
+*************************
+ Evaluating: ID_Improved 
+*************************
+
+Playing Matches:
+----------
+  Match 1: ID_Improved vs   random    	Result: 20 to 0
+  Match 2: ID_Improved vs   greedy    	Result: 18 to 2
+  Match 3: ID_Improved vs ID_Improved 	Result: 12 to 8
+  Match 4: ID_Improved vs   MM_Null   	Result: 18 to 2
+  Match 5: ID_Improved vs   MM_Open   	Result: 18 to 2
+  Match 6: ID_Improved vs MM_Improved 	Result: 17 to 3
+  Match 7: ID_Improved vs   AB_Null   	Result: 18 to 2
+  Match 8: ID_Improved vs   AB_Open   	Result: 13 to 7
+  Match 9: ID_Improved vs AB_Improved 	Result: 14 to 6
+
+
+Results:
+----------
+ID_Improved         82.22%
+
+*************************
+  Evaluating: other_guy  
+*************************
+
+Playing Matches:
+----------
+  Match 1:  other_guy  vs   random    	Result: 19 to 1
+  Match 2:  other_guy  vs   greedy    	Result: 18 to 2
+  Match 3:  other_guy  vs ID_Improved 	Result: 13 to 7
+  Match 4:  other_guy  vs   MM_Null   	Result: 18 to 2
+  Match 5:  other_guy  vs   MM_Open   	Result: 17 to 3
+  Match 6:  other_guy  vs MM_Improved 	Result: 18 to 2
+  Match 7:  other_guy  vs   AB_Null   	Result: 18 to 2
+  Match 8:  other_guy  vs   AB_Open   	Result: 15 to 5
+  Match 9:  other_guy  vs AB_Improved 	Result: 16 to 4
+
+
+Results:
+----------
+other_guy           84.44%
+
+*************************
+Evaluating: super_improve_score
+*************************
+
+Playing Matches:
+----------
+  Match 1: super_improve_score vs   random    	Result: 19 to 1
+  Match 2: super_improve_score vs   greedy    	Result: 17 to 3
+  Match 3: super_improve_score vs ID_Improved 	Result: 9 to 11
+  Match 4: super_improve_score vs   MM_Null   	Result: 20 to 0
+  Match 5: super_improve_score vs   MM_Open   	Result: 16 to 4
+  Match 6: super_improve_score vs MM_Improved 	Result: 14 to 6
+  Match 7: super_improve_score vs   AB_Null   	Result: 18 to 2
+  Match 8: super_improve_score vs   AB_Open   	Result: 15 to 5
+  Match 9: super_improve_score vs AB_Improved 	Result: 15 to 5
+
+
+Results:
+----------
+super_improve_score     79.44%
+
+*************************
+Evaluating: block_in_two 
+*************************
+
+Playing Matches:
+----------
+  Match 1: block_in_two vs   random    	Result: 20 to 0
+  Match 2: block_in_two vs   greedy    	Result: 17 to 3
+  Match 3: block_in_two vs ID_Improved 	Result: 8 to 12
+  Match 4: block_in_two vs   MM_Null   	Result: 17 to 3
+  Match 5: block_in_two vs   MM_Open   	Result: 16 to 4
+  Match 6: block_in_two vs MM_Improved 	Result: 16 to 4
+  Match 7: block_in_two vs   AB_Null   	Result: 18 to 2
+  Match 8: block_in_two vs   AB_Open   	Result: 13 to 7
+  Match 9: block_in_two vs AB_Improved 	Result: 14 to 6
+
+
+Results:
+----------
+block_in_two        77.22%
+
+*************************
+ Evaluating: free_in_two 
+*************************
+
+Playing Matches:
+----------
+  Match 1: free_in_two vs   random    	Result: 19 to 1
+  Match 2: free_in_two vs   greedy    	Result: 20 to 0
+  Match 3: free_in_two vs ID_Improved 	Result: 12 to 8
+  Match 4: free_in_two vs   MM_Null   	Result: 19 to 1
+  Match 5: free_in_two vs   MM_Open   	Result: 13 to 7
+  Match 6: free_in_two vs MM_Improved 	Result: 19 to 1
+  Match 7: free_in_two vs   AB_Null   	Result: 18 to 2
+  Match 8: free_in_two vs   AB_Open   	Result: 14 to 6
+  Match 9: free_in_two vs AB_Improved 	Result: 13 to 7
+
+
+Results:
+----------
+free_in_two         81.67%
+
+*************************
+    Evaluating: blind    
+*************************
+
+Playing Matches:
+----------
+  Match 1:    blind    vs   random    	Result: 20 to 0
+  Match 2:    blind    vs   greedy    	Result: 18 to 2
+  Match 3:    blind    vs ID_Improved 	Result: 8 to 12
+  Match 4:    blind    vs   MM_Null   	Result: 18 to 2
+  Match 5:    blind    vs   MM_Open   	Result: 15 to 5
+  Match 6:    blind    vs MM_Improved 	Result: 17 to 3
+  Match 7:    blind    vs   AB_Null   	Result: 20 to 0
+  Match 8:    blind    vs   AB_Open   	Result: 18 to 2
+  Match 9:    blind    vs AB_Improved 	Result: 15 to 5
+
+
+Results:
+----------
+blind               82.78%
+
+*************************
+Evaluating: you_cant_catch_me
+*************************
+
+Playing Matches:
+----------
+  Match 1: you_cant_catch_me vs   random    	Result: 20 to 0
+  Match 2: you_cant_catch_me vs   greedy    	Result: 17 to 3
+  Match 3: you_cant_catch_me vs ID_Improved 	Result: 10 to 10
+  Match 4: you_cant_catch_me vs   MM_Null   	Result: 19 to 1
+  Match 5: you_cant_catch_me vs   MM_Open   	Result: 17 to 3
+  Match 6: you_cant_catch_me vs MM_Improved 	Result: 17 to 3
+  Match 7: you_cant_catch_me vs   AB_Null   	Result: 19 to 1
+  Match 8: you_cant_catch_me vs   AB_Open   	Result: 15 to 5
+  Match 9: you_cant_catch_me vs AB_Improved 	Result: 14 to 6
+
+
+Results:
+----------
+you_cant_catch_me     82.22%
+
+*************************
+Evaluating: central_knight
+*************************
+
+Playing Matches:
+----------
+  Match 1: central_knight vs   random    	Result: 20 to 0
+  Match 2: central_knight vs   greedy    	Result: 17 to 3
+  Match 3: central_knight vs ID_Improved 	Result: 9 to 11
+  Match 4: central_knight vs   MM_Null   	Result: 18 to 2
+  Match 5: central_knight vs   MM_Open   	Result: 19 to 1
+  Match 6: central_knight vs MM_Improved 	Result: 14 to 6
+  Match 7: central_knight vs   AB_Null   	Result: 19 to 1
+  Match 8: central_knight vs   AB_Open   	Result: 13 to 7
+  Match 9: central_knight vs AB_Improved 	Result: 16 to 4
+
+
+Results:
+----------
+central_knight      80.56%
+
+*************************
+  Evaluating: division   
+*************************
+
+Playing Matches:
+----------
+  Match 1:  division   vs   random    	Result: 20 to 0
+  Match 2:  division   vs   greedy    	Result: 16 to 4
+  Match 3:  division   vs ID_Improved 	Result: 11 to 9
+  Match 4:  division   vs   MM_Null   	Result: 19 to 1
+  Match 5:  division   vs   MM_Open   	Result: 15 to 5
+  Match 6:  division   vs MM_Improved 	Result: 14 to 6
+  Match 7:  division   vs   AB_Null   	Result: 18 to 2
+  Match 8:  division   vs   AB_Open   	Result: 13 to 7
+  Match 9:  division   vs AB_Improved 	Result: 14 to 6
+
+
+Results:
+----------
+division            77.78%
+
+*************************
+Evaluating: The chosen one
+*************************
+
+Playing Matches:
+----------
+  Match 1: The chosen one vs   random    	Result: 17 to 3
+  Match 2: The chosen one vs   greedy    	Result: 16 to 4
+  Match 3: The chosen one vs ID_Improved 	Result: 10 to 10
+  Match 4: The chosen one vs   MM_Null   	Result: 20 to 0
+  Match 5: The chosen one vs   MM_Open   	Result: 13 to 7
+  Match 6: The chosen one vs MM_Improved 	Result: 13 to 7
+  Match 7: The chosen one vs   AB_Null   	Result: 17 to 3
+  Match 8: The chosen one vs   AB_Open   	Result: 15 to 5
+  Match 9: The chosen one vs AB_Improved 	Result: 14 to 6
+
+
+Results:
+----------
+The chosen one      75.00%
